@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-section {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  #add-task {
+    background-color: #fda085;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-task:hover {
+    background-color: #f6d365;
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #task-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #task-list li span {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  #task-list li button {
+    position: relative;
+    background-color: #fda085;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #task-list li button:hover {
+    background-color: #f6d365;
+  }
+  .complete-task {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(12, 230, 85);
+    position: absolute;
+    right: 20px;
+  }
+  
+  .complete-task::before {
+    content: '✓';
+    display: none;
+    margin-right: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .completed .complete-task::before {
+    display: inline;
+    transform: scale(1.5);
+  }
+  
+  .completed .task-text {
+    text-decoration: line-through;
+    color: #e0a3a3;
+  }  
+  /* ...existing styles... */
+
+  .github-corner {
+    display: inline-block;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    border-radius: 50%; /* Makes it circular */
+    position: relative;
+    top: 7px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    overflow: hidden;
+  }
+
+  .github-corner svg {
+    fill: #dd5c5c;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    border: 0;
+    right: 30px;
+  }
